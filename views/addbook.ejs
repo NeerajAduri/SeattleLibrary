@@ -1,0 +1,81 @@
+
+<% include ./partials/header %>
+<!-- 
+Bib Number : <input type="text" label="BibNum" placeholder="Enter Bib Number" id="Bib"> -->
+
+<body>
+<form action="/book" method="POST">
+<div class="form-elements">
+    <fieldset class="pure-group">
+        <label for="name"> Enter BibNum </label>
+        <input id="BibNum" name="BibNum" placeholder="Bib Number" required="required">
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="title"> Enter Book Title </label>
+      <input id="title" name="Title" placeholder="Book Title" required="required">
+    </fieldset>
+
+    <fieldset class="pure-group">
+        <label for="Author"> Enter Author </label>
+        <input id="author" name="Author" placeholder="Author" required="required">
+    </fieldset>
+
+    <fieldset class="pure-group">
+        <label for="PublicationYear"> Enter Publication Year </label>
+        <input id="publicationyear" name="PublicationYear" placeholder="Publication Year" required="required">
+    </fieldset>
+
+    <fieldset class="pure-group">
+        <label for="publisher"> Enter publisher </label>
+        <input id="publisher" name="Publisher" placeholder="publisher" required="required">
+    </fieldset>
+
+    <fieldset class="pure-group">
+        <label for="itemType"> Enter Item Type </label>
+        <input id="itemType" name="ItemType" placeholder="Item Type" required="required">
+    </fieldset>
+
+    <fieldset class="pure-group">
+        <label for="itemCollection"> Enter Item Collection </label>
+        <input id="itemCollection" name="ItemCollection" placeholder="Item Collection" required="required">
+    </fieldset>
+    
+    <fieldset class="pure-group">
+        <label for="itemCount"> Enter Item Count </label>
+        <input id="itemCount" name="ItemCount" placeholder="Item Count" required="required">
+    </fieldset>
+
+    <fieldset class="pure-group">
+        <label for="CollectionDesc"> Enter Collection Desc </label>
+        <input id="CollectionDesc" name="CollectionDesc" placeholder="Collection Desc" required="required">
+    </fieldset>
+
+    <fieldset class="pure-group">
+        <label for="CategoryGroup"> Enter Category Group </label>
+        <input id="CategoryGroup" name="CategoryGroup" placeholder="Category Group" required="required">
+    </fieldset>
+    <fieldset class="pure-group">
+        <label for="TypeDesc"> Enter Type Desc </label>
+        <input id="TypeDesc" name="TypeDesc" placeholder="Type Desc" required="required">
+    </fieldset>
+    <fieldset class="pure-group">
+        <label for="FormatGroup"> Enter Format Group </label>
+        <input id="FormatGroup" name="FormatGroup" placeholder="Format Group" required="required">
+    </fieldset>
+
+    <fieldset class="pure-group">
+        <label for="FormatSubgroup"> Enter Format Sub Group </label>
+        <input id="FormatSubgroup" name="FormatSubgroup" placeholder="Format Sub Group" required="required">
+    </fieldset>
+    
+
+
+    <button id="submit" class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane" ></i>&nbsp;Send
+    </button>
+  </div>
+</form>
+</body>
+
+<% include ./partials/footer %>

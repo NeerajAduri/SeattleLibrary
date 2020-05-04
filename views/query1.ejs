@@ -1,0 +1,46 @@
+
+<% include ./partials/header %>
+<header>
+  <h3 style="color:yellow;"> Business Question 1: I recently read a book written by author X. I want to know if there are other books written by the same author in the same category and available in stock?</h3>
+</header>
+<table id="results">
+  <tr>
+      <!-- <th>ID</th> -->
+      <th>BibNum</th>
+      <th>Title</th>
+      <th>Author</th>
+      <th>PublicationYear</th>
+      <th>Publisher</th>
+      <!-- <th>ItemType</th> -->
+      <!-- <th>ItemCollection</th> -->
+      <!-- <th>ItemCount</th> -->
+      <!-- <th>CollectionDesc</th> -->
+      <th>CategoryGroup</th>
+      <th>TypeDesc</th>
+      <th>Format Group</th>
+      <th>Format Subgroup</th>
+  </tr>
+  
+  <!-- ejs allows us to use for loops like this and the template generation becomes so easy compared to frameworks like Angular and React Native -->
+  <% for(var i=0;i<author.length;i++){ %>
+    <% var rows = author[i] %>
+  <tr>
+      <!-- <td> <%=  rows._id %> </td> -->
+      <td> <%= rows.BibNum %> </td>
+      <td> <%= rows.Title %> </td>
+      <td> <%= rows.Author %> </td>
+      <td> <%= rows.PublicationYear %> </td>
+      <td> <%= rows.Publisher %> </td>
+      <!-- <td> <%= rows.ItemType %> </td>
+      <td> <%= rows.ItemCollection %> </td>
+      <td> <%= rows.ItemCount %> </td>
+      <td> <%= rows.CollectionDesc %> </td> -->
+      <td> <%= rows["Category Group"] %> </td>
+      <td> <%= rows.TypeDesc %> </td>
+      <td> <%= rows["Format Group"] %> </td>
+      <td> <%= rows["Format Subgroup"] %> </td>
+  </tr>
+  <% } %>
+</table>
+<% include ./partials/footer %>
+

@@ -1,0 +1,25 @@
+
+<% include ./partials/header %>
+
+<header>
+  <h3 style="color:yellow;"> Business Question 2: Which are the top 10 popular books based on the number of times it is checked out?</h3>
+</header>
+<table id="results">
+    <tr>
+      <th>BibNum</th>
+      <th>Author</th>
+      <th>Title</th>
+     
+    </tr>
+    <% for(var i=0;i<results.length;i++){ %>
+      <% var rows = results[i] %>
+    <tr>
+        <td> <%= rows._id.BibNum %> </td>
+        <td> <%= rows._id.Title %> </td>
+        <td> <%= rows._id.Author %> </td>
+       
+    </tr>
+    <% } %>
+</table>
+<% include ./partials/footer %>
+

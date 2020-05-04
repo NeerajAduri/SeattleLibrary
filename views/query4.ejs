@@ -1,0 +1,21 @@
+
+<% include ./partials/header %>
+<header>
+  <h3 style="color:yellow;"> Business Question 4:  Most checked out books by category to determine the reading trends? </h3>
+</header>
+
+<table id="results">
+    <tr>
+      <th>Category</th>
+      <th>No. Of Times Checked Out</th>
+    </tr>
+    <% results.forEach( function (rows){ %>
+    <tr>
+      <td> <%= rows._id.CategoryGroup %> </td>
+      <td> <%= rows.CheckoutCount %> </td>
+
+    </tr>
+    <% }) %>
+</table>
+<% include ./partials/footer %>
+

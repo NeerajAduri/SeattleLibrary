@@ -1,0 +1,53 @@
+body {
+  background-color: #000;
+  background-image: url('/public/images/seattle.jpg');
+}
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: left;
+  padding-top: 40vh;
+}
+
+#landing-header h1 {
+  color: #fff;
+}
+
+.navbar{
+  margin-bottom: 0px !important;
+  min-height: 42px;
+}
+
+.navbar-brand {
+  float: left;
+  height: 40px;
+  padding: 8px 8px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+tr:nth-child(odd) {background-color: #98bddcbf !important;}
+tr:nth-child(even) {background-color: #f3f3f3e0 !important;}
+
+
+#results {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#results td, #results th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#results tr {background-color: white;}
+
+#results th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}

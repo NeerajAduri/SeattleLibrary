@@ -1,0 +1,21 @@
+
+<% include ./partials/header %>
+<header>
+  <h3 style="color:yellow;"> Business Question 3:  Which books have never been checked out?</h3>
+</header>
+<table id="results">
+    <tr>
+      <th>BibNum</th>
+      <th>Title</th>
+    </tr>
+    <% results.forEach( function (rows){ %>
+    <tr>
+      <td> <%= rows.BibNum %> </td>
+     
+      <td> <%= rows.Title %> </td>
+    </tr>
+    <% }) %>
+</table>
+
+<% include ./partials/footer %>
+
